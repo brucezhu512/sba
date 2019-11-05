@@ -18,40 +18,24 @@ Github: https://github.com/brucezhu512/sba
 
 Mentor can add the course page:
 
- Sign Up page (Can sign up as a user or a mentor):
-
-![A screenshot of a cell phone  Description automatically generated](file:////Users/bruce.zhu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)
-
- 
+Sign Up page (Can sign up as a user or a mentor):
+<img src="screenshots/login.jpg">
 
 After sign up as a mentor, after login he can add Courses.
-
- 
-
-![A screenshot of a cell phone  Description automatically generated](file:////Users/bruce.zhu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image002.png)
-
- 
+<img src="screenshots/main.jpg">
 
 Normal user can find courses added and apply!
-
- 
-
-![A screenshot of a cell phone  Description automatically generated](file:////Users/bruce.zhu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.png)
-
- 
+<img src="screenshots/course1.jpg">
 
 Normal user can also view the applied courses by pushing the “plus” button above.
-
-![A screenshot of a cell phone  Description automatically generated](file:////Users/bruce.zhu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.png)
-
+<img src="screenshots/course2.jpg">
 
 
 ## Dockerization
 
 For Each service (Mysql), we use docker containers for them.
 For example: https://github.com/brucezhu512/sba/tree/master/account
-
-![20844DCF-B73B-478E-A951-641434A7C18B](/var/folders/18/dtcrb_gs6bb97wbc1vp22xnw0000gn/T/ro.nextwave.Snappy/ro.nextwave.Snappy/20844DCF-B73B-478E-A951-641434A7C18B.png)
+<img src="screenshots/db-scripts.jpg">
 
 For Mysql:
 
@@ -77,18 +61,12 @@ docker run -it --name account-app \
 	-jar /apps/springboot.jar  
 ```
 
-
-
 ## CI
 
 I ran the Jenkins as docker container from an in internal server by script:
 ```shell
 docker run -p 8080:8080 -p 50000:50000 \  
 	-v /Users/will/Documents/jenkins:/**var**/jenkins_home \  
-  --name sba-jenkins -idt jenkins 
+  	--name sba-jenkins -idt jenkins 
 ```
-![A screenshot of a cell phone  Description automatically generated](file:////Users/bruce.zhu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image006.png)
-
-Settings:
-
-![A screenshot of a computer  Description automatically generated](file:////Users/bruce.zhu/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image007.png)
+<img src="screenshots/jenkins.jpg">
