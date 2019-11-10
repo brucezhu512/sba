@@ -2,17 +2,20 @@ package com.sba.course.model;
 
 import lombok.Data;
 
-import java.sql.Date;
+import java.util.Date;
 
 @Data
 public class MentorCourse {
+
   private Integer id;
   private String name;
-  private String description;
+  private String mentorName;
   private String skill;
   private Date startDate;
   private Date endDate;
-  private String mentorName;
   private Float fee;
   private Integer rate;
+  private String description;
+  private Integer duration;
+
 }

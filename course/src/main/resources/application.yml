@@ -9,17 +9,20 @@ spring:
     name: sba-course
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:32002/sba_course?useSSL=true
-    username: root
-    password: 123456
-spring.jpa:
-  show-sql: true
-  hibernate.ddl-auto: update
+    url: jdbc:mysql://localhost:32002/sba_course?useSSL=true&useUnicode=true&characterEncoding=utf-8
+    username: sba_course
+    password: sba_course_666
 server:
   servlet:
     context-path: /course
   port: 9996
- 
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 20000
+        read-timeout: 20000 
 
 logging:
  level: 
@@ -58,8 +61,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://sba-course-db:3306/sba_course?useSSL=true&useUnicode=true&characterEncoding=utf-8
-    username: root
-    password: 123456
+    username: sba_course
+    password: sba_course_666
 server:
   servlet:
     context-path: /course
@@ -88,3 +91,9 @@ management:
 
 swagger.enabled: true
 
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 20000
+        read-timeout: 20000 

@@ -5,18 +5,18 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class UserCourse {
+public class CourseMentor {
 
   private Integer id;
-  private String skill;
   private String name;
-  private String description;
+  private String skill;
   private Date startDate;
   private Date endDate;
-  private String mentorName;
-  private Float fee;
-  private Float cost;
   private String status;
+  private String userName;
+  private Float cost;
+  private Float rate;
+  private String description;
   private Integer duration;
   private Integer schedule;
 
